@@ -1,0 +1,178 @@
+@charset "utf-8";
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	overflow-x: hidden;
+	background:url(../images/mainBg.jpg);
+	background-repeat: repeat;
+	font-family: "微軟正黑體";
+}
+.custom-wrapper {
+	-webkit-font-smoothing: antialiased;
+	height: 5em;
+	overflow: hidden;
+	-webkit-transition: height 0.5s;
+	-moz-transition: height 0.5s;
+	-ms-transition: height 0.5s;
+	transition: height 0.5s;
+	position: fixed;
+	width: 100%;
+	z-index: 999999;
+	top: 0px;
+	border-top-width: thick;
+	border-top-style: ridge;
+	border-top-color: #FFF;
+	background-image:url(../images/background.png);
+	background-color:#FFF;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.custom-wrapper.open {
+    height: 100%;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.buttomBox{
+	margin-left:10%;
+	margin-right:10%;
+	width:80%;
+	text-align:center;
+}
+.buttomBox ul{
+	display:block;
+}
+.buttomBox ul li{
+	float:left;
+	position:relative;
+	width:14%;
+	list-style-type:none;
+}
+.buttomBox ul li a{
+	display: block;
+	text-decoration: none;
+	height: 65px;
+	color: #775f53;
+	padding-top: 15px;
+	font-size: 1.3em;
+	line-height: 1em;
+	transition: 0.5s;
+	font-family: "華康文徵明體W4";
+	font-weight: bold;
+}
+.Ebuttom{
+	margin-top:0.3em;
+	font-family:"monotype corsiva";
+}
+.buttomBox ul li:hover a{
+	border-bottom-width: medium;
+	border-bottom-style: ridge;
+	border-bottom-color: #960;
+	height: 60px;
+}
+.logoButtom a{
+	padding-top:0px !important;
+	line-height:0em;
+}
+.AppLogo{
+	display:none;
+}
+.AppLogo a{
+	transition:0s;
+}
+.Bottombuttom{
+	background-image:url(../images/background.jpg);
+	background-color:#FFF;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:bottom;
+	height:1em;
+}
+@media (max-width: 768px) {
+.custom-wrapper {
+	height: 3em;
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #963;
+}
+.custom-menu-3 {
+	text-align: left;
+}
+.custom-toggle {
+	display: block;
+}
+.logoButtom{
+	display:none;
+}
+.AppLogo{
+	display:block;
+	text-align:center;
+}
+.buttomBox ul li{
+	float:left;
+	position:relative;
+	width:100%;
+	list-style-type:none;
+}
+#wowslider-container1 {
+	margin-top:50px;
+}
+.Bottombuttom{
+	background-image:url(../images/background.jpg);
+	background-color:#FFF;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:bottom;
+	height:0.5em;
+}
+}
